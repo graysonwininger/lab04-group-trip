@@ -47,8 +47,18 @@ Console.WriteLine("Fuel Cost: " + FuelCost(miles, milesPerGallon, pricePerGallon
 Console.WriteLine("Pizza Cost: " + pizzaCost.ToString("C"));
 Console.WriteLine("Trip Total: " + tripTotal.ToString("C"));
 
+//Part 2: The Group
 
+//Creates arrays for data for the four people going
+string[] names = { "Ada", "Grace", "Alan", "Katherine" };
+double[] hoursWorked = { 22, 15, 30, 18 };
+double[] hourlyRates = { 13.50, 16.00, 11.20, 14.80 };
 
+//Displays people going, slices each, and cost per person
+Console.WriteLine("=== Part 2: The Group ===");
+Console.WriteLine("People going: " + names.Length);
+Console.WriteLine("Slices each " + (totalSlices / names.Length).ToString("F1"));
+Console.WriteLine("Cost per person: " + (tripTotal / names.Length).ToString("C"));
 
 // double slicesPerPerson = totalSlices / amountPeople;
 
